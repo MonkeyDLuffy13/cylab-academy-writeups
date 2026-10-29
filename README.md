@@ -86,8 +86,24 @@ Each writeup follows the same working format used across my other repos: underst
 | 39 | Web Gauntlet 3 (payload golf, 25 chars) | Hard | [39-web-gauntlet-3.md](writeups/web-exploitation/39-web-gauntlet-3.md) |
 | 40 | Java Script Kiddie 2 (known-plaintext brute) | Hard | [40-javascript-kiddie-2.md](writeups/web-exploitation/40-javascript-kiddie-2.md) |
 | 41 | msfroggenerator2 (proxy + bot + file:// chain) | Hard | [41-msfroggenerator2.md](writeups/web-exploitation/41-msfroggenerator2.md) |
+| 42 | Old Sessions (session hijacking, picoCTF 2026) | Easy | [42-old-sessions.md](writeups/web-exploitation/42-old-sessions.md) |
+| 43 | Crack the Gate 1 (ROT13 note, header backdoor) | Easy | [43-crack-the-gate-1.md](writeups/web-exploitation/43-crack-the-gate-1.md) |
+| 44 | SSTI1 (Jinja2 template injection) | Easy | [44-ssti1.md](writeups/web-exploitation/44-ssti1.md) |
+| 45 | n0s4n1ty 1 (PHP webshell upload + sudo) | Easy | [45-n0s4n1ty-1.md](writeups/web-exploitation/45-n0s4n1ty-1.md) |
+| 46 | head-dump (heapsnapshot secret disclosure) | Easy | [46-head-dump.md](writeups/web-exploitation/46-head-dump.md) |
+| 47 | Cookie Monster Secret Recipe (Base64 cookie) | Easy | [47-cookie-monster-secret-recipe.md](writeups/web-exploitation/47-cookie-monster-secret-recipe.md) |
+| 48 | WebDecode (hidden attribute, Base64) | Easy | [48-webdecode.md](writeups/web-exploitation/48-webdecode.md) |
+| 49 | Unminify (beautify minified source) | Easy | [49-unminify.md](writeups/web-exploitation/49-unminify.md) |
+| 50 | IntroToBurp (proxy, missing-param OTP bypass) | Easy | [50-introtoburp.md](writeups/web-exploitation/50-introtoburp.md) |
+| 51 | Bookmarklet (javascript: URL, hex escapes) | Easy | [51-bookmarklet.md](writeups/web-exploitation/51-bookmarklet.md) |
+| 52 | Local Authority (client-side auth logic) | Easy | [52-local-authority.md](writeups/web-exploitation/52-local-authority.md) |
+| 53 | Includes (flag split across css/js includes) | Easy | [53-includes.md](writeups/web-exploitation/53-includes.md) |
+| 54 | Cookies (cookie index enumeration) | Easy | [54-cookies.md](writeups/web-exploitation/54-cookies.md) |
+| 55 | Scavenger Hunt (5-file hunt incl. .htaccess) | Easy | [55-scavenger-hunt.md](writeups/web-exploitation/55-scavenger-hunt.md) |
+| 56 | dont-use-client-side (substring fragments) | Easy | [56-dont-use-client-side.md](writeups/web-exploitation/56-dont-use-client-side.md) |
+| 57 | Insp3ct0r (view-source trilogy) | Easy | [57-insp3ct0r.md](writeups/web-exploitation/57-insp3ct0r.md) |
 
-Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first).
+Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first). Writeups 42-57 cover the library's Easy Web Exploitation tier; the Easy entries Inspect HTML, GET aHEAD, where are the robots, and logon map to writeups 01-04 above.
 
 ### Forensics
 | # | Challenge | Points | File |
@@ -147,17 +163,18 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 ## Suggested learning order
 
 1. General Skills 01-04 — shell confidence.
-2. Web Exploitation 01-04 + Forensics 01-03 — first real vulnerability classes with zero setup.
-3. Web Exploitation 05-18 — the medium tier: SQLi, XXE, header and cookie manipulation, OAuth flows.
-4. Cryptography 01-03 — from classical ciphers to reading RSA parameters.
-5. Web Exploitation 19-28 — the JWT ladder, session forging, deserialization and injection sinks.
-6. Reverse Engineering 01-05, 13, 17 — decompilation, the vault-door series, gates and encoded payloads.
-7. Reverse Engineering 06-10 (droids) — the compressed Android pentest arc; pairs with the android-pentesting-cheatsheet repo.
-8. Reverse Engineering 11, 12, 14-16, 22 — assembly reading (x86, ARM, RISC-V), symbolic execution, and devirtualization.
-9. Web Exploitation 29-34 — sandbox escapes, XPath injection, and protocol-level tampering.
-10. Reverse Engineering 18-21, 23-29 — game logic, process arithmetic, Go binaries, debugger oracles, and dynamic analysis.
-11. Web Exploitation 35-41 — the classic ladder: client-side secrets, filtered SQLi series, and a full proxy-bot exploitation chain.
-12. Binary Exploitation 01-03 — memory corruption and format strings.
+2. Web Exploitation 01-04 + 57, 53 — first real vulnerability classes with zero setup: view-source and its variants.
+3. Web Exploitation 48-56 — the rest of the Easy tier: encoding, cookies, client-side auth, first Burp flight.
+4. Web Exploitation 05-18 — the medium tier: SQLi, XXE, header and cookie manipulation, OAuth flows.
+5. Cryptography 01-03 — from classical ciphers to reading RSA parameters.
+6. Web Exploitation 19-28 — the JWT ladder, session forging, deserialization and injection sinks.
+7. Reverse Engineering 01-05, 13, 17 — decompilation, the vault-door series, gates and encoded payloads.
+8. Reverse Engineering 06-10 (droids) — the compressed Android pentest arc; pairs with the android-pentesting-cheatsheet repo.
+9. Reverse Engineering 11, 12, 14-16, 22 — assembly reading (x86, ARM, RISC-V), symbolic execution, and devirtualization.
+10. Web Exploitation 29-34, 42-47 — sandbox escapes, XPath injection, protocol-level tampering, and the modern 2025-2026 Easy set (SSTI, uploads, heap dumps, sessions).
+11. Reverse Engineering 18-21, 23-29 — game logic, process arithmetic, Go binaries, debugger oracles, and dynamic analysis.
+12. Web Exploitation 35-41 — the classic ladder: client-side secrets, filtered SQLi series, and a full proxy-bot exploitation chain.
+13. Binary Exploitation 01-03 — memory corruption and format strings.
 
 ## Tooling quick reference
 
