@@ -78,7 +78,14 @@ Each writeup follows the same working format used across my other repos: underst
 | 31 | WebSockFish (WS frame tampering) | Medium | [31-websockfish.md](writeups/web-exploitation/31-websockfish.md) |
 | 32 | Trickster (upload magic-byte bypass) | Medium | [32-trickster.md](writeups/web-exploitation/32-trickster.md) |
 | 33 | Java Script Kiddie (client-side brute force) | Medium | [33-javascript-kiddie.md](writeups/web-exploitation/33-javascript-kiddie.md) |
-| 34 | X marks the spot (hexdump rebuild) | Hard | [34-x-marks-the-spot.md](writeups/web-exploitation/34-x-marks-the-spot.md) |
+| 34 | X marks the spot (XPath injection oracle) | Medium | [34-x-marks-the-spot.md](writeups/web-exploitation/34-x-marks-the-spot.md) |
+| 35 | login (client-side creds, picoMini redpwn) | Easy | [35-login.md](writeups/web-exploitation/35-login.md) |
+| 36 | Irish-Name-Repo 2 (filtered field SQLi) | Medium | [36-irish-name-repo-2.md](writeups/web-exploitation/36-irish-name-repo-2.md) |
+| 37 | Irish-Name-Repo 3 (ROT13 evasion) | Medium | [37-irish-name-repo-3.md](writeups/web-exploitation/37-irish-name-repo-3.md) |
+| 38 | Web Gauntlet 2 (SQLite glob tautology) | Medium | [38-web-gauntlet-2.md](writeups/web-exploitation/38-web-gauntlet-2.md) |
+| 39 | Web Gauntlet 3 (payload golf, 25 chars) | Hard | [39-web-gauntlet-3.md](writeups/web-exploitation/39-web-gauntlet-3.md) |
+| 40 | Java Script Kiddie 2 (known-plaintext brute) | Hard | [40-javascript-kiddie-2.md](writeups/web-exploitation/40-javascript-kiddie-2.md) |
+| 41 | msfroggenerator2 (proxy + bot + file:// chain) | Hard | [41-msfroggenerator2.md](writeups/web-exploitation/41-msfroggenerator2.md) |
 
 Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first).
 
@@ -115,6 +122,13 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 | 20 | gogo (Go binary reversing) | Hard | [20-gogo.md](writeups/reverse-engineering/20-gogo.md) |
 | 21 | Let's get dynamic (ltrace / LD_PRELOAD) | Medium | [21-lets-get-dynamic.md](writeups/reverse-engineering/21-lets-get-dynamic.md) |
 | 22 | riscy business (RISC-V reading) | Medium | [22-riscy-business.md](writeups/reverse-engineering/22-riscy-business.md) |
+| 23 | B1ll_Gat35 (Windows x64dbg) | Hard | [23-b1ll-gat35.md](writeups/reverse-engineering/23-b1ll-gat35.md) |
+| 24 | reverse_cipher (positional shifts) | Medium | [24-reverse-cipher.md](writeups/reverse-engineering/24-reverse-cipher.md) |
+| 25 | Easy as GDB (character oracle) | Medium | [25-easy-as-gdb.md](writeups/reverse-engineering/25-easy-as-gdb.md) |
+| 26 | OTP Implementation (gdb key recovery + XOR) | Hard | [26-otp-implementation.md](writeups/reverse-engineering/26-otp-implementation.md) |
+| 27 | not crypto (memcmp register read) | Medium | [27-not-crypto.md](writeups/reverse-engineering/27-not-crypto.md) |
+| 28 | breadth (binary diffing, redpwn) | Medium | [28-breadth.md](writeups/reverse-engineering/28-breadth.md) |
+| 29 | No way out (Unity memory teleport) | Medium | [29-no-way-out.md](writeups/reverse-engineering/29-no-way-out.md) |
 
 ### Binary Exploitation
 | # | Challenge | Points | File |
@@ -140,9 +154,10 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 6. Reverse Engineering 01-05, 13, 17 — decompilation, the vault-door series, gates and encoded payloads.
 7. Reverse Engineering 06-10 (droids) — the compressed Android pentest arc; pairs with the android-pentesting-cheatsheet repo.
 8. Reverse Engineering 11, 12, 14-16, 22 — assembly reading (x86, ARM, RISC-V), symbolic execution, and devirtualization.
-9. Web Exploitation 29-34 — sandbox escapes, sandbox-free protocols and data reconstruction.
-10. Reverse Engineering 18-21 — game logic, process arithmetic, Go binaries and dynamic analysis.
-11. Binary Exploitation 01-03 — memory corruption and format strings.
+9. Web Exploitation 29-34 — sandbox escapes, XPath injection, and protocol-level tampering.
+10. Reverse Engineering 18-21, 23-29 — game logic, process arithmetic, Go binaries, debugger oracles, and dynamic analysis.
+11. Web Exploitation 35-41 — the classic ladder: client-side secrets, filtered SQLi series, and a full proxy-bot exploitation chain.
+12. Binary Exploitation 01-03 — memory corruption and format strings.
 
 ## Tooling quick reference
 
