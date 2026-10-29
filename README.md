@@ -63,6 +63,16 @@ Each writeup follows the same working format used across my other repos: underst
 | 16 | Secrets | Medium | [16-secrets.md](writeups/web-exploitation/16-secrets.md) |
 | 17 | It is my Birthday | Medium | [17-it-is-my-birthday.md](writeups/web-exploitation/17-it-is-my-birthday.md) |
 | 18 | findme (OAuth) | Medium | [18-findme.md](writeups/web-exploitation/18-findme.md) |
+| 19 | JAuth (JWT alg:none) | Medium | [19-jauth.md](writeups/web-exploitation/19-jauth.md) |
+| 20 | Most Cookies (Flask session) | Medium | [20-most-cookies.md](writeups/web-exploitation/20-most-cookies.md) |
+| 21 | Super Serial (Java deserialization) | Medium | [21-super-serial.md](writeups/web-exploitation/21-super-serial.md) |
+| 22 | Web Gauntlet (SQLi filter evasion) | Medium | [22-web-gauntlet.md](writeups/web-exploitation/22-web-gauntlet.md) |
+| 23 | caas (command injection) | Medium | [23-caas.md](writeups/web-exploitation/23-caas.md) |
+| 24 | Client-side-again (obfuscated JS) | Medium | [24-client-side-again.md](writeups/web-exploitation/24-client-side-again.md) |
+| 25 | JaWT Scratchpad (secret cracking) | Medium | [25-jawt-scratchpad.md](writeups/web-exploitation/25-jawt-scratchpad.md) |
+| 26 | Java Code Analysis!?! (JWT forge) | Medium | [26-java-code-analysis.md](writeups/web-exploitation/26-java-code-analysis.md) |
+| 27 | More Cookies (CBC bit flip) | Medium | [27-more-cookies.md](writeups/web-exploitation/27-more-cookies.md) |
+| 28 | No Sql Injection (Mongo regex oracle) | Medium | [28-no-sql-injection.md](writeups/web-exploitation/28-no-sql-injection.md) |
 
 Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first).
 
@@ -75,11 +85,25 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 | 04 | Matryoshka Doll | 300 | [04-matryoshka-doll.md](writeups/forensics/04-matryoshka-doll.md) |
 
 ### Reverse Engineering
-| # | Challenge | Points | File |
+| # | Challenge | Difficulty | File |
 |---|---|---|---|
-| 01 | Safe Opener | 100 | [01-safe-opener.md](writeups/reverse-engineering/01-safe-opener.md) |
-| 02 | Vault Door 1 | 100 | [02-vault-door-1.md](writeups/reverse-engineering/02-vault-door-1.md) |
-| 03 | Fresh Java | 200 | [03-fresh-java.md](writeups/reverse-engineering/03-fresh-java.md) |
+| 01 | Safe Opener (Base64) | Easy | [01-safe-opener.md](writeups/reverse-engineering/01-safe-opener.md) |
+| 02 | Vault Door 1 (index map) | Easy | [02-vault-door-1.md](writeups/reverse-engineering/02-vault-door-1.md) |
+| 03 | Fresh Java (decompilation) | Medium | [03-fresh-java.md](writeups/reverse-engineering/03-fresh-java.md) |
+| 04 | Vault Door 7 (endianness) | Hard | [04-vault-door-7.md](writeups/reverse-engineering/04-vault-door-7.md) |
+| 05 | Vault Door 8 (bitwise brute force) | Hard | [05-vault-door-8.md](writeups/reverse-engineering/05-vault-door-8.md) |
+| 06 | Droids 0 (logcat) | Hard | [06-droids0.md](writeups/reverse-engineering/06-droids0.md) |
+| 07 | Droids 1 (jadx static) | Hard | [07-droids1.md](writeups/reverse-engineering/07-droids1.md) |
+| 08 | Droids 2 (native JNI library) | Hard | [08-droids2.md](writeups/reverse-engineering/08-droids2.md) |
+| 09 | Droids 3 (smali patching) | Hard | [09-droids3.md](writeups/reverse-engineering/09-droids3.md) |
+| 10 | Droids 4 (AES reversing / Frida) | Hard | [10-droids4.md](writeups/reverse-engineering/10-droids4.md) |
+| 11 | asm 2/3/4 (x86 series guide) | Hard | [11-asm-series.md](writeups/reverse-engineering/11-asm-series.md) |
+| 12 | ARMssembly 2/3/4 (aarch64 guide) | Hard | [12-armssembly-series.md](writeups/reverse-engineering/12-armssembly-series.md) |
+| 13 | Need For Speed (time gate bypass) | Hard | [13-need-for-speed.md](writeups/reverse-engineering/13-need-for-speed.md) |
+| 14 | Checkpass (angr symbolic execution) | Hard | [14-checkpass.md](writeups/reverse-engineering/14-checkpass.md) |
+| 15 | Keygenme (keygen / z3) | Hard | [15-keygenme.md](writeups/reverse-engineering/15-keygenme.md) |
+| 16 | Virtual Machine 1 (custom VM) | Hard | [16-virtual-machine-1.md](writeups/reverse-engineering/16-virtual-machine-1.md) |
+| 17 | Powershelly (encoded PS payload) | Hard | [17-powershelly.md](writeups/reverse-engineering/17-powershelly.md) |
 
 ### Binary Exploitation
 | # | Challenge | Points | File |
@@ -101,8 +125,11 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 2. Web Exploitation 01-04 + Forensics 01-03 — first real vulnerability classes with zero setup.
 3. Web Exploitation 05-18 — the medium tier: SQLi, XXE, header and cookie manipulation, OAuth flows.
 4. Cryptography 01-03 — from classical ciphers to reading RSA parameters.
-4. Reverse Engineering 01-03 — decompilation and key-check analysis.
-5. Binary Exploitation 01-03 — memory corruption and format strings.
+5. Web Exploitation 19-28 — the JWT ladder, session forging, deserialization and injection sinks.
+6. Reverse Engineering 01-05, 13, 17 — decompilation, the vault-door series, gates and encoded payloads.
+7. Reverse Engineering 06-10 (droids) — the compressed Android pentest arc; pairs with the android-pentesting-cheatsheet repo.
+8. Reverse Engineering 11, 12, 14-16 — assembly reading, symbolic execution, and devirtualization.
+9. Binary Exploitation 01-03 — memory corruption and format strings.
 
 ## Tooling quick reference
 
