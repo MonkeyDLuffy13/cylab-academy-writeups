@@ -73,6 +73,12 @@ Each writeup follows the same working format used across my other repos: underst
 | 26 | Java Code Analysis!?! (JWT forge) | Medium | [26-java-code-analysis.md](writeups/web-exploitation/26-java-code-analysis.md) |
 | 27 | More Cookies (CBC bit flip) | Medium | [27-more-cookies.md](writeups/web-exploitation/27-more-cookies.md) |
 | 28 | No Sql Injection (Mongo regex oracle) | Medium | [28-no-sql-injection.md](writeups/web-exploitation/28-no-sql-injection.md) |
+| 29 | SSTI2 (Jinja2 filter evasion) | Medium | [29-ssti2.md](writeups/web-exploitation/29-ssti2.md) |
+| 30 | 3v@l (Python eval jail) | Medium | [30-3val.md](writeups/web-exploitation/30-3val.md) |
+| 31 | WebSockFish (WS frame tampering) | Medium | [31-websockfish.md](writeups/web-exploitation/31-websockfish.md) |
+| 32 | Trickster (upload magic-byte bypass) | Medium | [32-trickster.md](writeups/web-exploitation/32-trickster.md) |
+| 33 | Java Script Kiddie (client-side brute force) | Medium | [33-javascript-kiddie.md](writeups/web-exploitation/33-javascript-kiddie.md) |
+| 34 | X marks the spot (hexdump rebuild) | Hard | [34-x-marks-the-spot.md](writeups/web-exploitation/34-x-marks-the-spot.md) |
 
 Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first).
 
@@ -104,6 +110,11 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 | 15 | Keygenme (keygen / z3) | Hard | [15-keygenme.md](writeups/reverse-engineering/15-keygenme.md) |
 | 16 | Virtual Machine 1 (custom VM) | Hard | [16-virtual-machine-1.md](writeups/reverse-engineering/16-virtual-machine-1.md) |
 | 17 | Powershelly (encoded PS payload) | Hard | [17-powershelly.md](writeups/reverse-engineering/17-powershelly.md) |
+| 18 | Wizardlike (maze map extraction) | Medium | [18-wizardlike.md](writeups/reverse-engineering/18-wizardlike.md) |
+| 19 | Forky (fork count arithmetic) | Hard | [19-forky.md](writeups/reverse-engineering/19-forky.md) |
+| 20 | gogo (Go binary reversing) | Hard | [20-gogo.md](writeups/reverse-engineering/20-gogo.md) |
+| 21 | Let's get dynamic (ltrace / LD_PRELOAD) | Medium | [21-lets-get-dynamic.md](writeups/reverse-engineering/21-lets-get-dynamic.md) |
+| 22 | riscy business (RISC-V reading) | Medium | [22-riscy-business.md](writeups/reverse-engineering/22-riscy-business.md) |
 
 ### Binary Exploitation
 | # | Challenge | Points | File |
@@ -128,8 +139,10 @@ Writeups 05-18 were prioritized from the current CyLab library Medium tier (high
 5. Web Exploitation 19-28 — the JWT ladder, session forging, deserialization and injection sinks.
 6. Reverse Engineering 01-05, 13, 17 — decompilation, the vault-door series, gates and encoded payloads.
 7. Reverse Engineering 06-10 (droids) — the compressed Android pentest arc; pairs with the android-pentesting-cheatsheet repo.
-8. Reverse Engineering 11, 12, 14-16 — assembly reading, symbolic execution, and devirtualization.
-9. Binary Exploitation 01-03 — memory corruption and format strings.
+8. Reverse Engineering 11, 12, 14-16, 22 — assembly reading (x86, ARM, RISC-V), symbolic execution, and devirtualization.
+9. Web Exploitation 29-34 — sandbox escapes, sandbox-free protocols and data reconstruction.
+10. Reverse Engineering 18-21 — game logic, process arithmetic, Go binaries and dynamic analysis.
+11. Binary Exploitation 01-03 — memory corruption and format strings.
 
 ## Tooling quick reference
 
