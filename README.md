@@ -43,12 +43,28 @@ Each writeup follows the same working format used across my other repos: underst
 | 03 | Mind your Ps and Qs (RSA) | 250 | [03-mind-your-ps-and-qs.md](writeups/cryptography/03-mind-your-ps-and-qs.md) |
 
 ### Web Exploitation
-| # | Challenge | Points | File |
+| # | Challenge | Difficulty | File |
 |---|---|---|---|
-| 01 | Inspect HTML | 100 | [01-inspect-html.md](writeups/web-exploitation/01-inspect-html.md) |
-| 02 | Get aHEAD | 100 | [02-get-ahead.md](writeups/web-exploitation/02-get-ahead.md) |
-| 03 | Where are the Robots | 100 | [03-where-are-the-robots.md](writeups/web-exploitation/03-where-are-the-robots.md) |
-| 04 | Logon | 100 | [04-logon.md](writeups/web-exploitation/04-logon.md) |
+| 01 | Inspect HTML | Easy | [01-inspect-html.md](writeups/web-exploitation/01-inspect-html.md) |
+| 02 | Get aHEAD | Easy | [02-get-ahead.md](writeups/web-exploitation/02-get-ahead.md) |
+| 03 | Where are the Robots | Easy | [03-where-are-the-robots.md](writeups/web-exploitation/03-where-are-the-robots.md) |
+| 04 | Logon | Easy | [04-logon.md](writeups/web-exploitation/04-logon.md) |
+| 05 | Search source | Medium | [05-search-source.md](writeups/web-exploitation/05-search-source.md) |
+| 06 | Roboto Sans | Medium | [06-roboto-sans.md](writeups/web-exploitation/06-roboto-sans.md) |
+| 07 | Power Cookie | Medium | [07-power-cookie.md](writeups/web-exploitation/07-power-cookie.md) |
+| 08 | Forbidden Paths | Medium | [08-forbidden-paths.md](writeups/web-exploitation/08-forbidden-paths.md) |
+| 09 | SQLiLite | Medium | [09-sqlilite.md](writeups/web-exploitation/09-sqlilite.md) |
+| 10 | SQL Direct | Medium | [10-sql-direct.md](writeups/web-exploitation/10-sql-direct.md) |
+| 11 | MatchTheRegex | Medium | [11-match-the-regex.md](writeups/web-exploitation/11-match-the-regex.md) |
+| 12 | SOAP (XXE) | Medium | [12-soap-xxe.md](writeups/web-exploitation/12-soap-xxe.md) |
+| 13 | More SQLi | Medium | [13-more-sqli.md](writeups/web-exploitation/13-more-sqli.md) |
+| 14 | picobrowser | Medium | [14-picobrowser.md](writeups/web-exploitation/14-picobrowser.md) |
+| 15 | Irish-Name-Repo 1 | Medium | [15-irish-name-repo-1.md](writeups/web-exploitation/15-irish-name-repo-1.md) |
+| 16 | Secrets | Medium | [16-secrets.md](writeups/web-exploitation/16-secrets.md) |
+| 17 | It is my Birthday | Medium | [17-it-is-my-birthday.md](writeups/web-exploitation/17-it-is-my-birthday.md) |
+| 18 | findme (OAuth) | Medium | [18-findme.md](writeups/web-exploitation/18-findme.md) |
+
+Writeups 05-18 were prioritized from the current CyLab library Medium tier (highest solve counts first).
 
 ### Forensics
 | # | Challenge | Points | File |
@@ -83,7 +99,8 @@ Each writeup follows the same working format used across my other repos: underst
 
 1. General Skills 01-04 — shell confidence.
 2. Web Exploitation 01-04 + Forensics 01-03 — first real vulnerability classes with zero setup.
-3. Cryptography 01-03 — from classical ciphers to reading RSA parameters.
+3. Web Exploitation 05-18 — the medium tier: SQLi, XXE, header and cookie manipulation, OAuth flows.
+4. Cryptography 01-03 — from classical ciphers to reading RSA parameters.
 4. Reverse Engineering 01-03 — decompilation and key-check analysis.
 5. Binary Exploitation 01-03 — memory corruption and format strings.
 
